@@ -2,7 +2,7 @@
   "name": "mongodb",
   "version": "1.0.0",
   "description": "A repository showcasing MongoDB fundamentals, CRUD operations, and integration with Node.js and Express.js.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/prthm45-kanha/MongoDB/issues"
   },
-  "homepage": "https://github.com/prthm45-kanha/MongoDB#readme"
+  "homepage": "https://github.com/prthm45-kanha/MongoDB#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.7.0"
+  }
 }
