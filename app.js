@@ -22,10 +22,17 @@ app.get('/update',async (req,res)=>{
 })
 
 app.get('/read',async (req,res)=>{
-    let readUser=await userModel.find({username:"tusii"});// to print only the username you want
+    let readUser=await userModel.find();
+    // let readUser=await userModel.find({username:"tusii"});to print only the username you want
     //   let readUser=await userModel.find(); to print all username
     res.send(readUser);
 })
+
+app.get('/delete',async (req,res)=>{
+    let deleteUser=await userModel.findOneAndDelete({username:"tusii"});
+    res.send(deleteUser);
+})
+
 app.listen(3000,()=>{
     console.log('Server is running on port 3000');
 })
